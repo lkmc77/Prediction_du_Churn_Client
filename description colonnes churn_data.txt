@@ -1,0 +1,67 @@
+user : Identifiant unique de l'utilisateur.
+
+age : Âge de l'utilisateur.
+
+housing : Type de logement 
+
+zodiac_sign : Signe astrologique de l'utilisateur 
+
+is_referred : Indique si l'utilisateur a été parrainé par un autre membre 
+
+credit_score : Score de crédit de l'utilisateur 
+
+deposits : Nombre total de dépôts effectués.
+
+withdrawal : Nombre total de retraits effectués.
+
+purchases : Nombre d'achats effectués via la plateforme.
+
+purchases_partners : Nombre d'achats effectués auprès de partenaires affiliés.
+
+cc_taken : Nombre de cartes de crédit souscrites.
+
+cc_recommended : Nombre de recommandations de cartes de crédit reçues par l'utilisateur.
+
+cc_application_begin : Nombre de fois où l'utilisateur a commencé un processus de demande de carte.
+
+app_downloaded : Indique si l'utilisateur a téléchargé l'application mobile.
+
+web_user : Indique si l'utilisateur utilise la version web.
+
+app_web_user : Indique si l'utilisateur utilise les deux plateformes (hybride).
+
+ios_user / android_user : Indique le système d'exploitation mobile utilisé.
+
+registered_phones : Nombre de téléphones enregistrés sur le compte.
+
+waiting_4_loan : Indique si l'utilisateur est en attente d'un prêt.
+
+cancelled_loan : Nombre de prêts annulés.
+
+received_loan : Nombre de prêts obtenus.
+
+rejected_loan : Nombre de demandes de prêt rejetées.
+
+rewards_earned : Total des points de récompense accumulés.
+
+reward_rate : Taux d'accumulation ou d'utilisation des récompenses.
+
+left_for_two_month_plus : Indique si l'utilisateur a été inactif pendant plus de deux mois.
+
+left_for_one_month : Indique si l'utilisateur a été inactif pendant un mois.
+
+churn : Indique si l'utilisateur a quitté le service 
+
+
+changer l'age en int 
+# 1. On remplit les cases vides par la moyenne (ou on les supprime)
+df['age'] = df['age'].fillna(df['age'].mean())
+
+# 2. On convertit en int
+df['age'] = df['age'].astype(int)
+
+# Petit bonus : on vérifie
+print(df['age'].dtype)
+
+
+
