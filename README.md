@@ -3,7 +3,7 @@
 > **Un client sur le point de partir, peut-on le détecter avant qu'il ne parte ?**  
 > Classification supervisée pour anticiper le churn sur une plateforme financière digitale.
 
----
+
 
 ## 🗂️ Contexte du projet
 
@@ -11,7 +11,7 @@ Dans le secteur fintech, perdre un client coûte bien plus cher que d'en acquér
 
 Le dataset contient **27 variables** décrivant le comportement financier et l'activité des utilisateurs : dépôts, retraits, score de crédit, prêts, récompenses, plateformes utilisées, etc.
 
----
+
 
 ## 🎯 Questions posées
 
@@ -19,7 +19,7 @@ Le dataset contient **27 variables** décrivant le comportement financier et l'a
 - Quel modèle prédit le mieux les départs clients ?
 - Comment optimiser les hyperparamètres pour améliorer les performances ?
 
----
+
 
 ## 🔍 Démarche analytique
 
@@ -39,7 +39,7 @@ Chargement → Nettoyage → Preprocessing → EDA → Modélisation → Optimis
 | **Optimisation** | `GridSearchCV` (cv=10) + `cross_val_score` sur Random Forest |
 | **Sauvegarde** | Export du meilleur modèle via `pickle` |
 
----
+
 
 ## 🤖 Modèles comparés
 
@@ -53,7 +53,7 @@ Chargement → Nettoyage → Preprocessing → EDA → Modélisation → Optimis
 
 > **Évaluation** : Confusion matrix, Classification report (precision / recall / f1-score), Courbe ROC
 
----
+
 
 ## 💡 Variables clés identifiées
 
@@ -63,7 +63,7 @@ Chargement → Nettoyage → Preprocessing → EDA → Modélisation → Optimis
 - `housing` / `payment_type` — Comportement financier
 - Indicateurs d'inactivité : `left_for_two_month_plus`, `left_for_one_month`
 
----
+
 
 ## 🛠️ Stack technique
 
@@ -74,7 +74,7 @@ Chargement → Nettoyage → Preprocessing → EDA → Modélisation → Optimis
 ![Seaborn](https://img.shields.io/badge/Seaborn-0.13-teal)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
 
----
+
 
 ## 📁 Structure du repo
 
@@ -86,7 +86,7 @@ Chargement → Nettoyage → Preprocessing → EDA → Modélisation → Optimis
  ┗ 📖 README.md
 ```
 
----
+
 
 ## ▶️ Lancer le projet
 
@@ -97,7 +97,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost
 jupyter notebook LOWE_KENGNE_IABD_B3.ipynb
 ```
 
----
+
 
 ## 👤 Auteur
 
